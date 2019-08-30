@@ -5,7 +5,7 @@ const initalState = {
 }
 
 const HANDLE_PLANETS = 'HANDLE_PLANETS'
-const HANDLE_PEOPLE = 'HANDLE_PLANETS'
+const HANDLE_PEOPLE = 'HANDLE_PEOPLE'
 const HANDLE_SHIPS = 'HANDLE_SHIPS'
 
 export const handlePlanets = (data) => {
