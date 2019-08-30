@@ -1,0 +1,10 @@
+.getButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+
+.getButtons Button {
+  margin-right: 1rem;
+}
