@@ -17,8 +17,18 @@ export class Buttons extends Component {
     }
 
     getPlanets = () => {
-        Axios.get('https://swapi.co/api/planets/')
+        Axios.get('https://swapi.co/api/planets')
             .then(res => {
+                console.log(res.data.results)
+                this.props.handlePlanets(res.data.results)
+            })
+        
+    }
+
+    getAlderaan = () => {
+        Axios.get('https://swapi.co/api/planets/?search=Alderaan')
+            .then(res => {
+                console.log(res.data.results)
                 this.props.handlePlanets(res.data.results)
             })
         
@@ -44,6 +54,9 @@ export class Buttons extends Component {
                 <Button variant="contained" color="primary"
                 onClick={() => this.getPlanets()}
                 >Planets</Button>
+                <Button variant="contained" color="primary"
+                onClick={() => this.getAlderaan()}
+                >Alderaan</Button>
                 <Button variant="contained" color="primary"
                 onClick={() => this.getPeople()}
                 >People</Button>

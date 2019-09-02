@@ -35,7 +35,7 @@ const Display = (props) => {
                 <Table className={classes.table}>
                     <TableHead>
                     <TableRow>
-                        <TableCell>Planets</TableCell>
+                        <TableCell>Planet</TableCell>
                     </TableRow>
                     </TableHead>
                     <TableBody>
